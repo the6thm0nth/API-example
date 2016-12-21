@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Facebook Sample</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <script src="/facebook.js"></script>
+
+        <!--
+        Below we include the Login Button social plugin. This button uses
+        the JavaScript SDK to present a graphical Login button that triggers
+        the FB.login() function when clicked.
+        -->
+
+        <fb:login-button scope="public_profile,email,user_friends,user_posts" onlogin="checkLoginState();">
+        </fb:login-button>
+        <div id="status"></div>
+        <button id="show-graph-api" onClick="showMyFeed()">Show my profile!</button>
+        <div id="my-profile"></div>
+        <div id="feed"></div>
+    </body>
+</html>

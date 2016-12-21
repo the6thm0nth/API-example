@@ -1,0 +1,24 @@
+<DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Hello Node World!</title>
+    </head>
+    <body>
+        <ul>
+        </ul>
+        <% for (var i in parks) { %>
+            <li>
+                <h3><%= parks[i].FLY_NAM + ' ' + parks[i].PANAME %></h3>
+                <ol>
+                    <li>OBJECTID: <%= parks[i].OBJECTID %></li>
+                    <li>FTC: <%= parks[i].FTC %></li>
+                    <li>IDN: <%= parks[i].IDN %></li>
+                    <li>GIGU: <%= parks[i].GIGU %></li>
+                    <li><%= parks[i].RMK %></li>
+                    <li>TEL: <%= parks[i].TEL %></li>
+                </ol>
+            </li>
+        <% } %>
+    </body>
+</html>

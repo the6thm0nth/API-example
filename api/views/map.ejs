@@ -1,0 +1,27 @@
+<DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Hello Node World!</title>
+        <!-- This stylesheet contains specific styles for displaying the map
+            on this page. Replace it with your own styles as described in the
+            documentation:
+            https://developers.google.com/maps/documentation/javascript/tutorial -->
+        <style type="text/css">
+            html, body {
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            #map {
+                height: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="map"></div>
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDgP4GTYRWPLhxEV4Bvh5FbxHpXhcQrQRA&callback=initMap" async defer></script>
+        <script src="/map.js"></script>
+    </body>
+</html>
